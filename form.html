@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+  <title>Resume Builder</title>
+</head>
+
+<body>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">RB</a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">
+              <i class="ri-arrow-right-up-line"></i>
+              <span>Home</span>
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="index.html/#devInformation" class="nav__link">
+              <i class="ri-arrow-right-up-line"></i>
+              <span>About Us</span>
+            </a>
+          </li>
+        </ul>
+
+
+        <div class="nav__close" id="nav-close">
+          <i class="ri-close-large-line"></i>
+        </div>
+
+        <div class="nav__social">
+          <a href="https://github.com/SanjayDev004" target="_blank" class="nav__social-link">
+            <i class="ri-github-line"></i>
+          </a>
+
+          <a href="https://www.linkedin.com/in/sanjaydev004" target="_blank" class="nav__social-link">
+            <i class="ri-linkedin-box-line"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="ri-menu-line"></i>
+      </div>
+    </nav>
+  </header>
+  <h1 class="title">Fill Your Resume Details</h1>
+
+  <div class="form-container">
+    <form id="resumeForm">
+      <input type="text" id="name" placeholder="Full Name" required>
+      <input type="text" id="title" placeholder="Job Title" required>
+      <input type="text" id="email" placeholder="Email" required>
+      <input type="text" id="phone" placeholder="Phone" required>
+      <input type="text" id="address" placeholder="Address" required>
+
+      <textarea id="summary" placeholder="Professional Summary"></textarea>
+      <textarea id="education" placeholder="Education Details"></textarea>
+      <textarea id="experience" placeholder="Work Experience"></textarea>
+      <textarea id="skills" placeholder="Skills (comma separated)"></textarea>
+
+      <button type="button" onclick="generateResume()">Preview Resume</button>
+    </form>
+  </div>
+
+  <div id="resumePreview" class="preview-container"></div>
+
+  <button id="downloadBtn" style="display:none;" onclick="downloadPDF()">Download PDF</button>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
