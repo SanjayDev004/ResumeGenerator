@@ -80,7 +80,6 @@ a {
   font-size: 1.5rem;
   cursor: pointer;
 }
-/*--------------------------------------------------------------*/
 main {
   position: relative;
   height: 100vh;
@@ -141,7 +140,7 @@ p {
 }
 
 #templates {
-  height: 100vh;
+  height: 100%;
   margin-top: 30px;
   display: flex;
   flex-direction: column;
@@ -238,6 +237,7 @@ form button:hover {
   width: 80%;
   background: white;
   padding: 20px;
+  border: 1px solid grey;
   border-radius: 10px;
 }
 
@@ -293,7 +293,7 @@ form button:hover {
     transition-delay: 0.5s;
   }
   .content h1 {
-    font-size: 20px;
+    font-size: 17px;
   }
   .content p {
     font-size: 12px;

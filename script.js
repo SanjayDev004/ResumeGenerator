@@ -18,8 +18,7 @@ function selectTemplate(templateName) {
   window.location.href = "form.html";
 }
 
-function generateResume(e) {
-  e.preventDefault();
+function generateResume() {
   const template = localStorage.getItem("selectedTemplate") || "template1";
 
   fetch(`/templates/${template}.html`)
